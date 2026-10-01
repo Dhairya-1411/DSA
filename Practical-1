@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    char str[100];
+    int i, start, len;
+    printf("Enter a string: ");
+    scanf("%s", str);
+    printf("Enter starting position: ");
+    scanf("%d", &start);
+    printf("Enter length: ");
+    scanf("%d", &len);
+    printf("Substring: ");
+    for(i = start; i < start + len; i++)
+    {
+        printf("%c", str[i]);
+    }
+    return 0;
+}
+
